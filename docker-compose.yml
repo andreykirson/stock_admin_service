@@ -1,0 +1,11 @@
+---
+version: '2'
+services:
+  stock-data-generator:
+    build: ./
+    mem_limit: 1024m
+    ports:
+      - "8080"
+      - "7000"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker

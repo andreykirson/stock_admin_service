@@ -1,0 +1,9 @@
+
+server.port: 8080
+server.error.include-message: always
+
+spring:
+  rsocket:
+    server:
+      port: 7000
+      transport: websocket
