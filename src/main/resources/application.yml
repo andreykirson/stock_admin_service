@@ -5,5 +5,9 @@ server.error.include-message: always
 spring:
   rsocket:
     server:
+      mapping-path: /rsocket
       port: 7000
       transport: websocket
+
+---
+spring.config.activate.on-profile: docker

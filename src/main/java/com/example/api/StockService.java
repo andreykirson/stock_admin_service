@@ -6,6 +6,6 @@ import reactor.core.publisher.Flux;
 
 public interface StockService {
 
-  @MessageMapping("stocks-prices")
+  @MessageMapping("stock-prices")
   Flux<Stock> getStocks();
 }
